@@ -1,17 +1,8 @@
-# cv_flutter_jonathan
+<img width="1366" height="768" alt="Capture d&#39;écran 2026-11-20 022148" src="https://github.com/user-attachments/assets/e84037a3-cf26-4f14-8b9b-d0c4a33966a3" />
+<img width="1366" height="768" alt="Capture d&#39;écran 2026-11-20 022234" src="https://github.com/user-attachments/assets/e2d108a0-0fcf-4c0b-904b-942748ac9487" />
+<img width="1366" height="768" alt="Capture d&#39;écran 2026-11-20 022624" src="https://github.com/user-attachments/assets/881cd79f-d8a3-4926-9f09-2bf80ad76e8f" />
+<img width="1366" height="768" alt="Capture d&#39;écran 2026-11-20 022304" src="https://github.com/user-attachments/assets/9de7ce1a-9d52-472e-b690-da651b2b29a2" />
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
