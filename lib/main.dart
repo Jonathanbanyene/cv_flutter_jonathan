@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-
+import 'auth_pages.dart';
+import 'famille_page.dart';
 // ============================================================
 //  TP Flutter : application CV
 //  Connexion de démonstration : jonathan 1234
@@ -25,15 +26,7 @@ class CvApp extends StatelessWidget {
   }
 }
 
-// ------------------------------------------------------------
-//  PAGE 1 : CONNEXION
-// ------------------------------------------------------------
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
 
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
 
 class _LoginPageState extends State<LoginPage> {
   final _formKey = GlobalKey<FormState>();
@@ -41,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
   final _pwdCtrl = TextEditingController();
   bool _hidePassword = true;
 
-  // À MODIFIER si tu veux d'autres identifiants
+ 
   static const _validId = 'jonathan';
   static const _validPwd = '1234';
 
@@ -384,52 +377,10 @@ class CvPage extends StatelessWidget {
   }
 }
 
-// ------------------------------------------------------------
-//  PAGE 3 : FAMILLE
-// ------------------------------------------------------------
-class FamilyMember {
-  final String name;
-  final String relation;
-  final String job;
-  final String photo;
 
-  const FamilyMember(this.name, this.relation, this.job, this.photo);
-}
 
-const List<FamilyMember> familyMembers = [
-  FamilyMember('Wetemwami', 'Père', 'Mulitaire', 'assets/images/pere.jpg'),
-  FamilyMember('Catherine', 'Mère', 'Nutritioniste', 'assets/images/mere.jpg'),
-  FamilyMember('MOIse', 'Frère', 'Enseignant', 'assets/images/frere.jpg'),
-  FamilyMember('SAFI', 'Sœur', 'Commercante', 'assets/images/soeur.jpg'),
-];
 
-class FamillePage extends StatelessWidget {
-  const FamillePage({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      padding: const EdgeInsets.all(16),
-      itemCount: familyMembers.length,
-      itemBuilder: (context, i) {
-        final m = familyMembers[i];
-        return Card(
-          margin: const EdgeInsets.only(bottom: 12),
-          child: ListTile(
-            contentPadding: const EdgeInsets.all(12),
-            leading: Photo(asset: m.photo, size: 60),
-            title: Text(
-              m.name,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-            subtitle: Text('${m.relation}\n${m.job}'),
-            isThreeLine: true,
-          ),
-        );
-      },
-    );
-  }
-}
 
 // ------------------------------------------------------------
 //  PAGE 4 : CONTACT (cliquable : appel, e-mail, liens)
@@ -483,7 +434,7 @@ class ContactPage extends StatelessWidget {
         _tile(context, Icons.business_center, 'LinkedIn',
             'linkedin.com/in/banyene wetemwami jonathan',
             url: 'https://www.linkedin.com/in/Banyene Wetemwami jonathan'),
-        _tile(context, Icons.code, 'GitHub', 'github.com/Banyene Wetemwami jonathan',
+        _tile(context, Icons.code, 'GitHub', 'https://github.com/Jonathanbanyene',
             url: 'https://github.com/Banyene Wetemwami jonathan'),
       ],
     );
